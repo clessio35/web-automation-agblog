@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverManager {
 
     private static WebDriver driver;
-    private static final String BASE_URL = "https://automationexercise.com/";
+    private static final String BASE_URL = "https://blog.agibank.com.br/";
 
     /**
      * Retorna a instância única do WebDriver.

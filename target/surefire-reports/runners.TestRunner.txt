@@ -1,0 +1,656 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 21, Skipped: 0, Time elapsed: 118.6 s <<< FAILURE! -- in runners.TestRunner
+Busca no blog do Agibank via lupa.Acesso ao blog e abertura da busca -- Time elapsed: 7.297 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele clica na lupa de busca")
+public void ele_clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o campo de busca deve ser exibido corretamente")
+public void o_campo_de_busca_deve_ser_exibido_corretamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Busca por produtos principais do banco #1 -- Time elapsed: 5.436 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a {string}")
+public void os_resultados_devem_conter_conteudos_relacionados_a(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("pelo menos {int} resultados devem ser exibidos")
+public void pelo_menos_resultados_devem_ser_exibidos(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Busca por produtos principais do banco #2 -- Time elapsed: 6.096 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a {string}")
+public void os_resultados_devem_conter_conteudos_relacionados_a(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("pelo menos {int} resultados devem ser exibidos")
+public void pelo_menos_resultados_devem_ser_exibidos(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Busca por produtos principais do banco #3 -- Time elapsed: 5.884 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a {string}")
+public void os_resultados_devem_conter_conteudos_relacionados_a(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("pelo menos {int} resultados devem ser exibidos")
+public void pelo_menos_resultados_devem_ser_exibidos(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Busca por produtos principais do banco #4 -- Time elapsed: 8.472 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a {string}")
+public void os_resultados_devem_conter_conteudos_relacionados_a(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("pelo menos {int} resultados devem ser exibidos")
+public void pelo_menos_resultados_devem_ser_exibidos(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Busca por produtos principais do banco #5 -- Time elapsed: 3.932 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a {string}")
+public void os_resultados_devem_conter_conteudos_relacionados_a(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("pelo menos {int} resultados devem ser exibidos")
+public void pelo_menos_resultados_devem_ser_exibidos(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar relevancia dos resultados para emprestimo -- Time elapsed: 5.332 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os {int} primeiros resultados devem conter termos relacionados a emprestimo")
+public void os_primeiros_resultados_devem_conter_termos_relacionados_a_emprestimo(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("nao deve haver conteudos irrelevantes nas primeiras posicoes")
+public void nao_deve_haver_conteudos_irrelevantes_nas_primeiras_posicoes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar ordenacao por data para busca especifica -- Time elapsed: 5.626 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem estar ordenados por data decrescente")
+public void os_resultados_devem_estar_ordenados_por_data_decrescente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar consistencia de ordenacao para cartao -- Time elapsed: 5.522 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem manter um criterio consistente de ordenacao")
+public void os_resultados_devem_manter_um_criterio_consistente_de_ordenacao() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("nao devem exibir conteudos muito antigos antes dos mais recentes")
+public void nao_devem_exibir_conteudos_muito_antigos_antes_dos_mais_recentes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar paginacao dos resultados -- Time elapsed: 5.666 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("acessa a proxima pagina de resultados")
+public void acessa_a_proxima_pagina_de_resultados() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("novos resultados devem ser exibidos")
+public void novos_resultados_devem_ser_exibidos() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("nao deve repetir os resultados da pagina anterior")
+public void nao_deve_repetir_os_resultados_da_pagina_anterior() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar abertura de artigo a partir da busca -- Time elapsed: 5.740 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("clica em um dos resultados")
+public void clica_em_um_dos_resultados() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o artigo deve ser carregado corretamente")
+public void o_artigo_deve_ser_carregado_corretamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o titulo deve corresponder ao resultado clicado")
+public void o_titulo_deve_corresponder_ao_resultado_clicado() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca por termos relacionados (intencao) #1 -- Time elapsed: 5.459 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a emprestimo")
+public void os_resultados_devem_conter_conteudos_relacionados_a_emprestimo() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca por termos relacionados (intencao) #2 -- Time elapsed: 5.475 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a emprestimo")
+public void os_resultados_devem_conter_conteudos_relacionados_a_emprestimo() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca por termos relacionados (intencao) #3 -- Time elapsed: 5.574 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem conter conteudos relacionados a emprestimo")
+public void os_resultados_devem_conter_conteudos_relacionados_a_emprestimo() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca com caracteres especiais #1 -- Time elapsed: 5.447 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o sistema nao deve apresentar erro")
+public void o_sistema_nao_deve_apresentar_erro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem ser exibidos de forma controlada")
+public void os_resultados_devem_ser_exibidos_de_forma_controlada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca com caracteres especiais #2 -- Time elapsed: 4.675 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o sistema nao deve apresentar erro")
+public void o_sistema_nao_deve_apresentar_erro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem ser exibidos de forma controlada")
+public void os_resultados_devem_ser_exibidos_de_forma_controlada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca com caracteres especiais #3 -- Time elapsed: 5.510 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o sistema nao deve apresentar erro")
+public void o_sistema_nao_deve_apresentar_erro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem ser exibidos de forma controlada")
+public void os_resultados_devem_ser_exibidos_de_forma_controlada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca com caracteres especiais #4 -- Time elapsed: 5.552 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o sistema nao deve apresentar erro")
+public void o_sistema_nao_deve_apresentar_erro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("os resultados devem ser exibidos de forma controlada")
+public void os_resultados_devem_ser_exibidos_de_forma_controlada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca com entradas invalidas #1 -- Time elapsed: 4.268 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o sistema deve tratar a busca corretamente")
+public void o_sistema_deve_tratar_a_busca_corretamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("nao deve apresentar falha ou quebra de layout")
+public void nao_deve_apresentar_falha_ou_quebra_de_layout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca com entradas invalidas #2 -- Time elapsed: 5.267 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o sistema deve tratar a busca corretamente")
+public void o_sistema_deve_tratar_a_busca_corretamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("nao deve apresentar falha ou quebra de layout")
+public void nao_deve_apresentar_falha_ou_quebra_de_layout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Busca no blog do Agibank via lupa.Validar busca com entradas invalidas #3 -- Time elapsed: 5.388 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que o usuario acessa o blog do Agibank' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que o usuario acessa o blog do Agibank")
+public void que_o_usuario_acessa_o_blog_do_agibank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("clica na lupa de busca")
+public void clica_na_lupa_de_busca() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ele busca por {string}")
+public void ele_busca_por(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o sistema deve tratar a busca corretamente")
+public void o_sistema_deve_tratar_a_busca_corretamente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("nao deve apresentar falha ou quebra de layout")
+public void nao_deve_apresentar_falha_ou_quebra_de_layout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
