@@ -1,0 +1,6 @@
+utils\ReportUtils.class
+utils\MetodoUtils.class
+pages\fillPage.class
+utils\TestContext.class
+config\DriverManager.class
+report\ExtentReport.class
