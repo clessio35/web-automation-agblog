@@ -16,12 +16,12 @@ import config.DriverManager;
 import utils.MetodoUtils;
 import utils.TestContext;
 
-public class AgiBlog {
+public class AgiBlogPage {
 
 	private WebDriver driver;
 	private MetodoUtils metodo;
 
-	public AgiBlog(WebDriver driver) {
+	public AgiBlogPage(WebDriver driver) {
 		this.driver = driver;
 		this.metodo = new MetodoUtils(driver);
 	}
