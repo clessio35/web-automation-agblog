@@ -1,114 +1,125 @@
 package steps;
 
+import org.openqa.selenium.WebDriver;
+
+import config.DriverManager;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.AgiBlog;
 
 public class AgiBlogStep {
 
-    // ---------- GIVEN ----------
+	private WebDriver driver;
+	private AgiBlog agi;
 
-    @Given("que o usuario acessa o blog do Agibank")
-    public void acessaBlog() {
-        // TODO: abrir navegador e acessar URL
-    }
+	public AgiBlogStep() {
+		this.driver = DriverManager.getDriver();
+		this.agi = new AgiBlog(driver);
+	}
+	// ---------- GIVEN ----------
 
-    @Given("clica na lupa de busca")
-    public void clicaNaLupa() {
-        // TODO: clicar no ícone de busca
-    }
+	@Given("que o usuario acessa o blog do Agibank")
+	public void acessaBlog() {
+		// TODO: abrir navegador e acessar URL
+	}
 
-    // ---------- WHEN ----------
+	@Given("clica na lupa de busca")
+	public void clicaNaLupa() {
+		// TODO: clicar no ícone de busca
+	}
 
-    @When("ele busca por {string}")
-    public void buscaPor(String termo) {
-        // TODO: digitar termo e executar busca
-    }
+	// ---------- WHEN ----------
 
-    @When("acessa a proxima pagina de resultados")
-    public void acessaProximaPagina() {
-        // TODO: clicar na paginação
-    }
+	@When("ele busca por {string}")
+	public void buscaPor(String termo) {
+		// TODO: digitar termo e executar busca
+	}
 
-    @When("clica em um dos resultados")
-    public void clicaEmResultado() {
-        // TODO: clicar em um resultado da lista
-    }
+	@When("acessa a proxima pagina de resultados")
+	public void acessaProximaPagina() {
+		// TODO: clicar na paginação
+	}
 
-    // ---------- THEN ----------
+	@When("clica em um dos resultados")
+	public void clicaEmResultado() {
+		// TODO: clicar em um resultado da lista
+	}
 
-    @Then("o campo de busca deve ser exibido corretamente")
-    public void validaCampoBusca() {
-        // TODO: validar input visível
-    }
+	// ---------- THEN ----------
 
-    @Then("os resultados devem conter conteudos relacionados a {string}")
-    public void validaConteudoRelacionado(String categoria) {
-        // TODO: validar conteúdo por categoria
-    }
+	@Then("o campo de busca deve ser exibido corretamente")
+	public void validaCampoBusca() {
+		// TODO: validar input visível
+	}
 
-    @Then("pelo menos {int} resultados devem ser exibidos")
-    public void validaQuantidadeResultados(Integer quantidade) {
-        // TODO: validar quantidade mínima
-    }
+	@Then("os resultados devem conter conteudos relacionados a {string}")
+	public void validaConteudoRelacionado(String categoria) {
+		// TODO: validar conteúdo por categoria
+	}
 
-    @Then("os primeiros resultados devem ser relevantes para {string}")
-    public void validaRelevancia(String termo) {
-        // TODO: validar relevância dos primeiros resultados
-    }
+	@Then("pelo menos {int} resultados devem ser exibidos")
+	public void validaQuantidadeResultados(Integer quantidade) {
+		// TODO: validar quantidade mínima
+	}
 
-    @Then("nao deve haver conteudos irrelevantes nas primeiras posicoes")
-    public void validaIrrelevancia() {
-        // TODO: validar ausência de conteúdo irrelevante
-    }
+	@Then("os primeiros resultados devem ser relevantes para {string}")
+	public void validaRelevancia(String termo) {
+		// TODO: validar relevância dos primeiros resultados
+	}
 
-    @Then("os resultados devem estar ordenados por {string}")
-    public void validaOrdenacao(String criterio) {
-        // TODO: validar ordenação
-    }
+	@Then("nao deve haver conteudos irrelevantes nas primeiras posicoes")
+	public void validaIrrelevancia() {
+		// TODO: validar ausência de conteúdo irrelevante
+	}
 
-    @Then("novos resultados devem ser exibidos")
-    public void validaNovosResultados() {
-        // TODO: validar novos resultados
-    }
+	@Then("os resultados devem estar ordenados por {string}")
+	public void validaOrdenacao(String criterio) {
+		// TODO: validar ordenação
+	}
 
-    @Then("nao deve repetir os resultados anteriores")
-    public void validaNaoRepeticao() {
-        // TODO: validar não repetição
-    }
+	@Then("novos resultados devem ser exibidos")
+	public void validaNovosResultados() {
+		// TODO: validar novos resultados
+	}
 
-    @Then("o artigo deve ser carregado corretamente")
-    public void validaArtigo() {
-        // TODO: validar carregamento do artigo
-    }
+	@Then("nao deve repetir os resultados anteriores")
+	public void validaNaoRepeticao() {
+		// TODO: validar não repetição
+	}
 
-    @Then("o titulo deve corresponder ao resultado clicado")
-    public void validaTitulo() {
-        // TODO: validar título
-    }
+	@Then("o artigo deve ser carregado corretamente")
+	public void validaArtigo() {
+		// TODO: validar carregamento do artigo
+	}
 
-    @Then("os resultados devem ser relevantes para {string}")
-    public void validaRelevanciaGeral(String termo) {
-        // TODO: validação geral
-    }
+	@Then("o titulo deve corresponder ao resultado clicado")
+	public void validaTitulo() {
+		// TODO: validar título
+	}
 
-    @Then("o sistema nao deve apresentar erro")
-    public void validaSemErro() {
-        // TODO: validar ausência de erro
-    }
+	@Then("os resultados devem ser relevantes para {string}")
+	public void validaRelevanciaGeral(String termo) {
+		// TODO: validação geral
+	}
 
-    @Then("os resultados devem ser exibidos corretamente")
-    public void validaResultadosOK() {
-        // TODO: validar renderização
-    }
+	@Then("o sistema nao deve apresentar erro")
+	public void validaSemErro() {
+		// TODO: validar ausência de erro
+	}
 
-    @Then("o sistema deve tratar a busca corretamente")
-    public void validaTratamentoBusca() {
-        // TODO: validar tratamento
-    }
+	@Then("os resultados devem ser exibidos corretamente")
+	public void validaResultadosOK() {
+		// TODO: validar renderização
+	}
 
-    @Then("nao deve apresentar falha visual")
-    public void validaLayout() {
-        // TODO: validar layout
-    }
+	@Then("o sistema deve tratar a busca corretamente")
+	public void validaTratamentoBusca() {
+		// TODO: validar tratamento
+	}
+
+	@Then("nao deve apresentar falha visual")
+	public void validaLayout() {
+		// TODO: validar layout
+	}
 }
