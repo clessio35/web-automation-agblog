@@ -19,20 +19,21 @@ Automação de testes para o blog do Agibank, utilizando Java 17, Selenium, Cucu
   Apache POI (para manipulação de Excel caso necessário)
 
 -Estrutura do Projeto
-  src/
-   ├─ main/
-   │   ├─ java/
-   │   │   ├─ config/       # DriverManager e configurações
-   │   │   ├─ pages/        # Page Objects
-   │   │   ├─ report/       # Configuração do ExtentReports
-   │   │   └─ utils/        # Métodos utilitários (screenshots, waits, Excel)
-   │   └─ resources/        # Dados de teste e arquivos auxiliares
-   └─ test/
-       └─ java/             # Step definitions e cenários de teste
-  target/
-   ├─ extent-report.html    # Relatório de teste ExtentReports
-   ├─ evidencias/           # Screenshots geradas durante execução
-   └─ surefire-reports/     # Relatórios do Maven Surefire
+ src/
+ ├─ main/
+ │  ├─ java/
+ │  │  ├─ config/       # DriverManager e configurações
+ │  │  ├─ pages/        # Page Objects
+ │  │  ├─ report/       # Configuração do ExtentReports
+ │  │  └─ utils/        # Métodos utilitários (screenshots, waits, Excel)
+ │  └─ resources/       # Dados de teste e arquivos auxiliares
+ └─ test/
+    └─ java/            # Step definitions e cenários de teste
+
+target/
+ ├─ extent-report.html      # Relatório de teste ExtentReports
+ ├─ evidencias/             # Screenshots geradas durante execução
+ └─ surefire-reports/       # Relatórios do Maven Surefire
   
 - Como Executar
 
