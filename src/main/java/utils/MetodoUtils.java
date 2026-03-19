@@ -31,6 +31,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.aventstack.extentreports.MediaEntityBuilder;
 
 import io.cucumber.java.Scenario;
+import io.netty.handler.timeout.TimeoutException;
 
 public class MetodoUtils {
 	private WebDriver driver;
@@ -227,8 +228,20 @@ public class MetodoUtils {
 	}
 
 	public static boolean isElementVisible(WebDriver driver, By locator) {
-		List<WebElement> elements = driver.findElements(locator);
-		return elements.size() > 0 && elements.get(0).isDisplayed();
+		try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement element = wait.until(
+	            ExpectedConditions.visibilityOfElementLocated(locator)
+	        );
+	        return element.isDisplayed();
+	    } catch (TimeoutException e) {
+	        return false;
+	    }
+	}
+	
+	public static WebElement waitFor(WebDriver driver, By locator, int timeoutSeconds) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+	    return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
 }

@@ -8,12 +8,12 @@ Feature: Busca no blog do Agibank via lupa
     When ele insere "<termo>" na busca
     Then os resultados devem conter conteudos relacionados a "<categoria>"
     Examples:
-      | termo                  | categoria           |
-      | emprestimo consignado  | emprestimo         |
-      | emprestimo pessoal     | emprestimo pessoal |
-      | cartao de credito      | cartao             |
-      | pix                    | pix                |
-      | conta corrente         | conta              |
+      | termo               			     	 | categoria          					 |
+      | emprestimo consignado  	 | emprestimo consignado      |
+      | emprestimo pessoal 	 		 | emprestimo pessoal			 |
+      | cartão de credito    	  		 |  cartão de credito           		  |
+      | pix                    					 | pix              							  |
+      | conta corrente       				 | conta corrente          	   		   |
 
   @all @relevancia_resultados @relevancia
   Scenario Outline: Validar relevancia dos resultados

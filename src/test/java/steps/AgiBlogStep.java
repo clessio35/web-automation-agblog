@@ -29,7 +29,7 @@ public class AgiBlogStep {
 
     @Then("os resultados devem conter conteudos relacionados a {string}")
     public void validaConteudoRelacionado(String categoria) {
-//        agi.validateResultsByCategory(categoria);
+        agi.validateResultsByCategory(categoria);
     }
 
     // ================================
