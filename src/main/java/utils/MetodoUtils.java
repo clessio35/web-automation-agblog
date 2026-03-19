@@ -173,9 +173,10 @@ public class MetodoUtils {
 	}
 
 	public void clickElementByXpath(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		By locator = By.xpath(xpath);
 		WebElement elemento = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		System.out.println("aguardando elemento");
 		try {
 			elemento.click();
 		} catch (ElementClickInterceptedException e) {
@@ -187,6 +188,14 @@ public class MetodoUtils {
 	public void clickElementById(String id) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		By locator = By.id(id);
+		WebElement elemento = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
+		elemento.click();
+	}
+	
+	public void clickElementBycss(String css) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		By locator = By.cssSelector(css);
 		WebElement elemento = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 		elemento.click();
@@ -220,25 +229,6 @@ public class MetodoUtils {
 	public static boolean isElementVisible(WebDriver driver, By locator) {
 		List<WebElement> elements = driver.findElements(locator);
 		return elements.size() > 0 && elements.get(0).isDisplayed();
-	}
-
-	public static double calculateDiscountedTotal(List<Double> products, double discount, double tax) {
-		if (products == null || products.isEmpty())
-			return 0.0;
-		if (discount < 0 || tax < 0)
-			throw new IllegalArgumentException("Desconto ou imposto inválido");
-
-		double total = 0.0;
-		for (double p : products) {
-			if (p < 0)
-				throw new IllegalArgumentException("Preço inválido");
-			total += p;
-		}
-
-		total -= total * (discount / 100);
-		total += total * (tax / 100);
-
-		return Math.round(total * 100.0) / 100.0;
 	}
 
 }

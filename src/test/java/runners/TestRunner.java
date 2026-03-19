@@ -13,7 +13,7 @@ import utils.ReportUtils;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
 		glue = { "steps", "hooks" },
-		tags = "@abertura_busca", 
+		tags = "@busca_produtos", 
 		plugin = {
 			"pretty", "html:target/cucumber-reports.html", 
 			"json:target/cucumber-report.json"

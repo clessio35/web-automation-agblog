@@ -48,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>mar. 18, 2026 05:33:57 PM</span>
+			<span class='label blue darken-3 suite-start-time'>mar. 18, 2026 09:16:26 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -64,6 +64,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -107,12 +108,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> tests passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$60%'>
+                    <span class='strong'>3</span> tests passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> tests failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='40%'>
+                    2</span> tests failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -133,17 +134,17 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Abertura da busca</span>
-						<span class='test-time'>mar. 18, 2026 05:33:57 PM</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>Busca por produtos principais do banco</span>
+						<span class='test-time'>mar. 18, 2026 09:16:26 PM</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>mar. 18, 2026 05:33:57 PM</span>
-	<span class='label end-time'>mar. 18, 2026 05:34:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 04.539</span>
+	<span class='label start-time'>mar. 18, 2026 09:16:26 PM</span>
+	<span class='label end-time'>mar. 18, 2026 09:16:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 03.483</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -157,15 +158,187 @@
 		<tbody>
 			<tr class='log' status='info'>			
 				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
-				<td class='timestamp'>17:34:02</td>
+				<td class='timestamp'>21:16:29</td>
 				<td class='step-details'>
-						Abertura_da_busca
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='evidencias\Abertura_da_busca\01_Abertura_da_busca.png' src='evidencias\Abertura_da_busca\01_Abertura_da_busca.png'>
+						Busca_por_produtos_principais_do_banco
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png' src='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png'>
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>21:16:30</td>
+				<td class='step-details'>
+						❌ Scenario failed
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Busca por produtos principais do banco</span>
+						<span class='test-time'>mar. 18, 2026 09:16:30 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>mar. 18, 2026 09:16:30 PM</span>
+	<span class='label end-time'>mar. 18, 2026 09:16:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 02.559</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>21:16:32</td>
+				<td class='step-details'>
+						Busca_por_produtos_principais_do_banco
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png' src='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png'>
+				</td>
+			</tr>
+			<tr class='log' status='fail'>			
+				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
+				<td class='timestamp'>21:16:32</td>
+				<td class='step-details'>
+						❌ Scenario failed
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Busca por produtos principais do banco</span>
+						<span class='test-time'>mar. 18, 2026 09:16:32 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>mar. 18, 2026 09:16:32 PM</span>
+	<span class='label end-time'>mar. 18, 2026 09:16:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 23.046</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>21:16:35</td>
+				<td class='step-details'>
+						Busca_por_produtos_principais_do_banco
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png' src='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png'>
 				</td>
 			</tr>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>17:34:02</td>
+				<td class='timestamp'>21:16:55</td>
+				<td class='step-details'>
+						✅ Scenario passed
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Busca por produtos principais do banco</span>
+						<span class='test-time'>mar. 18, 2026 09:16:56 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>mar. 18, 2026 09:16:56 PM</span>
+	<span class='label end-time'>mar. 18, 2026 09:17:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 25.659</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>21:16:58</td>
+				<td class='step-details'>
+						Busca_por_produtos_principais_do_banco
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png' src='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>21:17:21</td>
+				<td class='step-details'>
+						✅ Scenario passed
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Busca por produtos principais do banco</span>
+						<span class='test-time'>mar. 18, 2026 09:17:22 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>mar. 18, 2026 09:17:22 PM</span>
+	<span class='label end-time'>mar. 18, 2026 09:17:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 22.936</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>			
+				<td class='status info' title='Info' alt='Info'><i class='material-icons'> info_outline </i></td>
+				<td class='timestamp'>21:17:24</td>
+				<td class='step-details'>
+						Busca_por_produtos_principais_do_banco
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png' src='evidencias\Busca_por_produtos_principais_do_banco\01_Busca_por_produtos_principais_do_banco.png'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>21:17:44</td>
 				<td class='step-details'>
 						✅ Scenario passed
 				</td>
@@ -206,7 +379,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -218,19 +391,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>mar. 18, 2026 05:33:57 PM</div>
+					<div class='panel-lead'>mar. 18, 2026 09:16:26 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>mar. 18, 2026 05:34:02 PM</div>
+			 		<div class='panel-lead'>mar. 18, 2026 09:17:45 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 04.725</div>
+					<div class='panel-lead'>00 01 18.534</div>
 				</div>
 			</div>
 		</div>
@@ -241,9 +414,9 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+                parentCount: 5,
+				passParent: 3,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
@@ -269,7 +442,7 @@
 		
 		<script>
 			var timeline = {
-			        "Abertura da busca":4.539
+			        "Busca por produtos principais do banco":3.483,"Busca por produtos principais do banco":2.559,"Busca por produtos principais do banco":23.046,"Busca por produtos principais do banco":25.659,"Busca por produtos principais do banco":22.936
 			};
 		</script>
 		
