@@ -19,21 +19,27 @@ Automação de testes para o blog do Agibank, utilizando Java 17, Selenium, Cucu
   Apache POI (para manipulação de Excel caso necessário)
 
 -Estrutura do Projeto
- src/
- ├─ main/
- │  ├─ java/
- │  │  ├─ config/       # DriverManager e configurações
- │  │  ├─ pages/        # Page Objects
- │  │  ├─ report/       # Configuração do ExtentReports
- │  │  └─ utils/        # Métodos utilitários (screenshots, waits, Excel)
- │  └─ resources/       # Dados de teste e arquivos auxiliares
- └─ test/
-    └─ java/            # Step definitions e cenários de teste
 
-target/
- ├─ extent-report.html      # Relatório de teste ExtentReports
- ├─ evidencias/             # Screenshots geradas durante execução
- └─ surefire-reports/       # Relatórios do Maven Surefire
+web-automation-agblog/
+  src/
+    main/
+      java/
+        config/           # Configurações do driver e setup Selenium
+        pages/            # Page Objects (cada página do blog)
+        report/           # Configuração do ExtentReports
+        utils/            # Métodos utilitários (screenshots, waits, Excel)
+      resources/          # Arquivos de teste e propriedades
+    test/
+      java/
+        stepdefinitions/  # Step Definitions do Cucumber
+        runners/          # Classes de execução de testes
+        hooks/            # Hooks Before/After do Cucumber
+  target/
+    extent-report/        # Relatórios HTML do ExtentReports
+    evidencias/           # Screenshots por cenário
+    surefire-reports/     # Relatórios do Maven Surefire
+  pom.xml                 # Gerenciador de dependências Maven
+  README.md               # Documentação do projeto
   
 - Como Executar
 
@@ -54,8 +60,9 @@ target/
 
 - Ao final da execução:
 
-  Relatório ExtentReports em: target/extent-report/report.html
-  <img width="1397" height="624" alt="image" src="https://github.com/user-attachments/assets/4e86ee38-fbf3-404d-bc28-d351bc29e29f" />
+ Relatório ExtentReports: target/extent-report/report.html
+
+<img src="https://github.com/user-attachments/assets/4e86ee38-fbf3-404d-bc28-d351bc29e29f" width="600" />
 
   
   - Screenshots em: evidencias/<nome_cenario>/
@@ -81,12 +88,13 @@ target/
   Configurado localmente, usando a url localhost:8085/
   Lembrar de informar a versão do jdk no jenkins config: 
 
-<img width="833" height="855" alt="image" src="https://github.com/user-attachments/assets/28f550b9-17f0-4189-a31a-c6b419a2cf49" />
+<img src="https://github.com/user-attachments/assets/28f550b9-17f0-4189-a31a-c6b419a2cf49" width="500" />
 
-em seguida rodar
-<img width="1405" height="728" alt="image" src="https://github.com/user-attachments/assets/98fe486c-8d25-4501-bf71-65f1ff0982d5" />
+Em seguida, execute:
 
+<img src="https://github.com/user-attachments/assets/98fe486c-8d25-4501-bf71-65f1ff0982d5" width="500" />
 
-<img width="1635" height="560" alt="image" src="https://github.com/user-attachments/assets/bd18824b-54e1-4738-b026-4713d26a04bb" />
+Visualização final:
 
+<img src="https://github.com/user-attachments/assets/bd18824b-54e1-4738-b026-4713d26a04bb" width="600" />
   
