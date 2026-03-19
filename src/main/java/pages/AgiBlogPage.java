@@ -1,7 +1,6 @@
 package pages;
 
 import static config.DriverManager.getDriver;
-import static utils.MetodoUtils.isElementVisible;
 import static utils.MetodoUtils.waitFor;
 
 import java.time.Duration;
@@ -18,8 +17,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.Status;
+
 import config.DriverManager;
 import utils.MetodoUtils;
+import utils.ReportUtils;
 import utils.TestContext;
 
 public class AgiBlogPage {
@@ -104,28 +106,46 @@ public class AgiBlogPage {
 	}
 
 	public void validateResultsByCategory(String categoria) {
-		System.out.println("validate results by termo");
-		waitFor(driver, By.xpath("//span[normalize-space()='" + categoria + "']"), 30);
-		MetodoUtils.takeStepScreenshot(getDriver(), getScenarioName());
-		WebElement main = waitFor(driver, By.id("main"), 30);
-		waitFor(driver, By.tagName("article"), 30);
-		 
-		List<WebElement> listDeArtigos = main.findElements(By.tagName("article"));
-		if (listDeArtigos.isEmpty()) {
-			waitFor(driver, By.xpath("//p[contains(text(),'Lamentamos, mas nada foi encontrado para sua pesqu')]"), 20);
-		    System.out.println("not found, termo -> : " + categoria);
-		    return;
-		}
-		for(WebElement artigo : listDeArtigos) {
-			String title = artigo.findElement(By.tagName("h2")).getText();
-			String link = artigo.findElement(By.tagName("a")).getAttribute("href");
-			if (title.isEmpty() || link.isEmpty()) {
-		        System.out.println("not found");
-		        continue;
-		    }
-			System.out.println("title: " + title);
-			System.out.println("link: " + link);
-		}
-		MetodoUtils.takeStepScreenshot(getDriver(), getScenarioName());
+	    System.out.println("validate results by termo");
+
+	    ReportUtils.setExtentTest(ReportUtils.getExtent().createTest("Validate article: " + categoria));
+	    var test = ReportUtils.getExtentTest();
+
+	    try {
+	        test.log(Status.INFO, "init log: " + categoria);
+	        waitFor(driver, By.xpath("//span[normalize-space()='" + categoria + "']"), 30);
+	        MetodoUtils.takeStepScreenshot(getDriver(), getScenarioName()); 
+
+	        WebElement main = waitFor(driver, By.id("main"), 30);
+	        List<WebElement> listDeArtigos = main.findElements(By.tagName("article"));
+	        
+	        if (listDeArtigos.isEmpty()) {
+	            waitFor(driver, By.xpath("//p[contains(text(),'Lamentamos, mas nada foi encontrado para sua pesqu')]"), 30);
+	            MetodoUtils.takeStepScreenshot(getDriver(), getScenarioName() + " sem pesquisa");
+	            test.log(Status.WARNING, "not founded -> : " + categoria);
+	            System.out.println("not found, termo -> : " + categoria);
+	            return;
+	        }
+
+	        for (WebElement artigo : listDeArtigos) {
+	            String title = artigo.findElement(By.tagName("h2")).getText();
+	            String link = artigo.findElement(By.tagName("a")).getAttribute("href");
+	            if (title.isEmpty() || link.isEmpty()) {
+	                test.log(Status.WARNING, "incomplete ");
+	                System.out.println("not found");
+	                continue;
+	            }
+	            test.log(Status.PASS, "Título: " + title + " | Link: " + link);
+	            System.out.println("title: " + title);
+	            System.out.println("link: " + link);
+	        }
+
+	        MetodoUtils.takeStepScreenshot(getDriver(), getScenarioName()); 
+	        test.log(Status.INFO, "success");
+
+	    } catch (Exception e) {
+	        test.log(Status.FAIL, "error: " + e.getMessage());
+	        throw e;
+	    }
 	}
 }
